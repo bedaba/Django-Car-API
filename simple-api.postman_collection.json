@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "dccc11e0-20d5-49f3-a5ab-77ec0ccd2864",
+		"name": "simple-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25447262"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/cars/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cars",
+						""
+					]
+				},
+				"description": "select all cars"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/addcar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"car_name\": \"created by bedaba edward\",\r\n    \"top_speed\": 202\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/car",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"car"
+					]
+				},
+				"description": "Add new car"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/car/Bugatti Chiron",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"car_name\": \"created by bedaba edward\",\r\n    \"top_speed\": 200\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/car/Bugatti Chiron",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"car",
+						"Bugatti Chiron"
+					]
+				},
+				"description": "update car "
+			},
+			"response": []
+		}
+	]
+}
